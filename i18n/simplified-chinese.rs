@@ -55,8 +55,8 @@ alert.dynamic.disable "关闭动态网格"
 alert.colorPicker "在对象上拖动手指选取一个颜色"
 alert.camera.resetView "重置视图"
 alert.camera.snapView "切换视图"
-alert.mask.show "显示蒙版"
-alert.mask.hide "隐藏蒙版"
+alert.mask.show "显示遮罩"
+alert.mask.hide "隐藏遮罩"
 alert.selection.lock "锁定所选项"
 alert.selection.unlock "解锁所选项"
 alert.selection.isolate "隔离所选项"
@@ -98,7 +98,7 @@ background.imageReset "重设"
 // camera
 camera "相机"
 // saved views
-camera.updateView "更新视图？"
+camera.updateView "更新视图"
 camera.addView "添加视图"
 camera.focusOn "正在观察"
 // projection
@@ -108,7 +108,7 @@ camera.perspective "透视视图"
 camera.fov "焦距"
 // orbit
 camera.orbit "视图旋转"
-camera.orbit.help "旋转模式启用后可使用双指旋转视图。"
+camera.orbit.help "旋转模式启用后可使用双指旋转视图"
 camera.trackball "旋转模式"
 camera.turntable "水平模式"
 // speed
@@ -177,7 +177,7 @@ file.project.autoSave.help "每隔一段时间将您的项目另存为一个单�
 
 $0"
 file.project.autoSave.popup "弹窗提醒"
-file.project.autoSave.minutes "自动保存间隔"
+file.project.autoSave.minutes "自动保存时间（分）"
 file.project.autoSave.delete "删除自动保存文件"
 file.project.autoSave.delete.confirm "确认删除？"
 
@@ -418,13 +418,13 @@ interface.quickCameraSnapFlip.help "当相机处于基本视图时，点击切�
 // left
 interface.leftButtons "左侧快捷方式"
 interface.quickSmooth "平滑"
-interface.quickMask "蒙版"
+interface.quickMask "遮罩"
 interface.quickToggle "反向操作锁定"
 interface.quickPaint "材质"
 interface.quickAlpha "画笔形状"
-interface.maskGesture "蒙版手势"
+interface.maskGesture "遮罩手势"
 interface.screenTooSmall "如设备屏幕太小，一些图标将不会显示。"
-interface.maskGesture.help "按住蒙版快捷方式，并且：
+interface.maskGesture.help "按住遮罩快捷方式，并且：
 
 - 在背景上拖动可清除蒙版
 - 在背景上点击可反相蒙版
@@ -726,7 +726,7 @@ primitive.triplanar.title.help "三向投影是将原对象三个平面的投影
 primitive.triplanarIsolate "可见性"
 primitive.triplanarSameSize "固定比例（立方体）"
 primitive.triplanarPolish "羽化"
-primitive.triplanarResetMask "重置蒙版"
+primitive.triplanarResetMask "重置遮罩"
 primitive.triplanarReproject "重新投影"
 primitive.triplanarReproject.title "修改三向投影设置后会更新平面上的蒙版。
 
@@ -890,7 +890,7 @@ shading.matcapGlobal.help "如果您希望在不同对象上使用不同的材�
 // bottom shortcut buttons (ICON FIT)
 shortcut.voxel "重构"
 shortcut.wire "网格"
-shortcut.mask "蒙版"
+shortcut.mask "遮罩"
 shortcut.reset "重设"
 shortcut.snap "切换"
 shortcut.solo "隔离"
@@ -1044,9 +1044,9 @@ tool.move.normal "法线方向"
 tool.drag "拖拽"
 tool.smooth "平滑"
 tool.smooth.relax "规整网格"
-tool.mask "蒙版"
-tool.mask.unmask "消除蒙版"
-tool.maskSelector "选择蒙版"
+tool.mask "遮罩"
+tool.mask.unmask "消除遮罩"
+tool.maskSelector "选择遮罩"
 tool.paint "绘画"
 tool.paint.erase "橡皮"
 tool.paint.depthFilter ""
@@ -1107,14 +1107,14 @@ tool.mask.polish "平滑边界"
 tool.mask.engraveEmboss ""
 tool.mask.extract "抽壳"
 tool.mask.split "分离"
-tool.mask.closeMask "分离操作（蒙版区域）："
-tool.mask.closeUnmask "分离操作（非蒙版区域）："
+tool.mask.closeMask "分离操作（遮罩区域）："
+tool.mask.closeUnmask "分离操作（非遮罩区域）："
 tool.mask.closeAction "分离操作："
 tool.mask.closeActionNone "无"
 tool.mask.closeActionFill "填补"
 tool.mask.closeActionShell "抽壳"
 tool.mask.closeAction.help "- 无
-仅分离蒙版区域，并且不封闭对象。
+仅分离遮罩区域，并且不封闭对象。
 
 - 填补
 孔洞会被填补并光滑。
@@ -1266,8 +1266,8 @@ topology.surfaceMethod.help "不同模式的影响：
 - 标准：智能判断
 - 细分：增加细节
 - 简化：移除细节"
-topology.surfaceUseMasking "保护蒙版区域"
-topology.surfaceUseMasking.help "蒙版区域的拓扑将不会受到影响。"
+topology.surfaceUseMasking "保护遮罩区域"
+topology.surfaceUseMasking.help "遮罩区域的拓扑将不会受到影响。"
 topology.surfaceExtrapolate "顶点扩张"
 // dynamic
 topology.dynamic "动态网格"
